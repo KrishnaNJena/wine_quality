@@ -1,4 +1,10 @@
+# Local packages installed
+-e .
+
+# third parties
 dvc
 dvc[gdrive]
 sklearn
 pandas
+pytest
+tox

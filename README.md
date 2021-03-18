@@ -31,4 +31,17 @@ Step 10: git commit -m "first commit"
 Step 11: push an existing repository from the command line
 
 
+Step 12: tox command
+
+        for rebuilding : tox -r 
+
+Step 13: Pytest Command
+        
+        pytest -v 
+
+Step 14: Setup commands: pip install -e .
+
+Step 15: Build your own package commands: python setup.py sdist bdist # Send distribution & build the distribution
+
+
 
