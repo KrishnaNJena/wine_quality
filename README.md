@@ -56,9 +56,13 @@ Step 13: Pytest Command
         
         pytest -v 
 
-Step 14: Setup commands: pip install -e .
+Step 14: Setup commands: 
 
-Step 15: Build your own package commands: python setup.py sdist bdist # Send distribution & build the distribution
+        pip install -e .
+
+Step 15: Build your own package commands:
+
+         python setup.py sdist bdist # Send distribution & build the distribution
 
 
 
