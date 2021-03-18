@@ -47,6 +47,10 @@ Step 10:
 
 Step 11: push an existing repository from the command line
 
+        git remote add origin https://github.com/krishna9753/simple-dvc-demo.git
+        git branch -M main
+        git push origin main
+
 
 Step 12: tox command
 
