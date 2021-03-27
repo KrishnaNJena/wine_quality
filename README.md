@@ -1,72 +1,70 @@
-Step 1: Created Environment : 
+create env 
 
-        conda create -n winequality python=3.7 -y
+```bash
+conda create -n wineq python=3.7 -y
+```
 
+activate env
+```bash
+conda activate wineq
+```
 
-Step 2: Activate Environment : 
+created a req file
 
+install the req
+```bash
+pip install -r requirements.txt
+```
+download the data from 
 
-        activate winequality
+https://drive.google.com/drive/folders/18zqQiCJVgF7uzXgfbIJ-04zgz1ItNfF5?usp=sharing
 
+```bash
+git init
+```
+```bash
+dvc init 
+```
+```bash
+dvc add data_given/winequality.csv
+```
+```bash
+git add .
+```
+```bash
+git commit -m "first commit"
+```
 
-Step 3: Created requirements.txt file
+oneliner updates  for readme
 
+```bash
+git add . && git commit -m "update Readme.md"
+```
+```bash
+git remote add origin https://github.com/c17hawke/simple-dvc-demo.git
+git branch -M main
+git push origin main
+```
 
-Step 4: Install requirements.txt file :
+tox command -
+```bash
+tox
+```
+for rebuilding -
+```bash
+tox -r 
+```
+pytest command
+```bash
+pytest -v
+```
 
-         pip install -r requirements.txt
+setup commands -
+```bash
+pip install -e . 
+```
 
-
-Step 5: Download Wine Quality Check Dataset
-
-
-Step 6: 
-
-        git init 
-
-
-Step 7: 
-
-        dvc init
-
-
-Step 8: 
-
-        dvc add data_given/winequality.csv
-
-
-Step 9: 
-        
-        git add .
-
-
-Step 10: 
-
-        git commit -m "first commit"
-
-
-Step 11: push an existing repository from the command line
-
-        git remote add origin https://github.com/krishna9753/simple-dvc-demo.git
-        git branch -M main
-        git push origin main
-
-
-Step 12: tox command
-
-        for rebuilding : tox -r 
-
-Step 13: Pytest Command
-        
-        pytest -v 
-
-Step 14: Setup commands: 
-
-        pip install -e .
-
-Step 15: Build your own package commands:
-
-         python setup.py sdist bdist # Send distribution & build the distribution
-
-
-
+build your own package commands- 
+```bash
+python setup.py sdist bdist_wheel
+```
